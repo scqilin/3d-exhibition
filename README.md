@@ -4,6 +4,7 @@
 
 实际运行效果：
 ![飞行器](./public/carma.png)
+![飞行器](./public/carma2.png)
 太卡了 不写了
 ## 电脑配置
 12th Gen Intel(R) Core(TM) i7-1255U   1.70 GHz

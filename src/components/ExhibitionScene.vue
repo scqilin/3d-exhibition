@@ -38,7 +38,7 @@ export default {
         0.25,
         50
       )
-      camera.position.set(1, 1, 4)
+      camera.position.set(-2, 1, 4)
 
       renderer = new WebGPURenderer({ antialias: true })
       renderer.setSize(container.value.clientWidth, container.value.clientHeight)
@@ -51,7 +51,7 @@ export default {
       controls = new OrbitControls(camera, renderer.domElement)
       controls.minDistance = 3;
       controls.maxDistance = 12;
-      controls.target.set(0, 1, 0);
+      controls.target.set(0, 0, 0);
       controls.maxPolarAngle = Math.PI / 2;
 
 
@@ -117,7 +117,7 @@ export default {
           let i = 0
           setInterval(() => {
             i += 0.1
-            aircraft.position.y = 0.5 * Math.sin(i)
+            aircraft.position.y = 0.2 + 0.05 * Math.sin(i)
           }, 100)
         },
         undefined,
